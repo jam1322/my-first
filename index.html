@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #c4c4c4;
+      display: inline-block;
+    }
+
+    .nav {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav a {
+      padding: 12px;
+      background: #d6d6d6;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .nav a:hover {
+      background: #bdbdbd;
+    }
+
+    .logout {
+      padding: 15px;
+      text-align: center;
+      background: #b0b0b0;
+      cursor: pointer;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 15px;
+      background: #ddd;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #e8e8e8;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div>
+      <div class="profile">
+        <img src="" alt="Profile">
+      </div>
+      <div class="nav">
+        <a href="#">Dashboard</a>
+        <a href="#">Courses</a>
+        <a href="#">Grades</a>
+        <a href="#">Settings</a>
+      </div>
+    </div>
+    <div class="logout">🔒 Logout</div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="header">Student Dashboard</div>
+    <div class="content">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+    </div>
+  </div>
+</body>
+</html>
